@@ -1,0 +1,12 @@
+create table ISSUESLISTS(ID SERIAL PRIMARY KEY, NAME VARCHAR(100));
+create table ISSUES(ID SERIAL PRIMARY KEY, ISSUESLIST_ID BIGINT, SUMMAR VARCHAR(100), DESCRIPTION VARCHAR(100), USER_ID_ASSIGNEDTO BIGINT);
+INSERT INTO ISSUESLISTS(NAME) VALUES
+("ToDo"),
+("In progress"),
+("Done");
+INSERT INTO ISSUES(ISSUESLIST_ID, SUMMAR, DESCRIPTION, USER_ID_ASSIGNEDTO) VALUES 
+(1, "Sprzatanie", "Lorem Ipsum", 2),
+(1, "Mycie", "Lorem Ipsum", 2),
+(1, "Gotowanie", "Lorem Ipsum", 3),
+(2, "Programowanie", "Lorem Ipsum", 4),
+(3, "Spanie", "Lorem Ipsum", 5);
